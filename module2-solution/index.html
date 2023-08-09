@@ -1,1 +1,56 @@
-ECHO is on.
+<!DOCTYPE html>
+<head>
+	<<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Mockups</title>
+<style>
+/* Common styles */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .mockup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Desktop styles */
+  @media (min-width: 1024px) {
+    .desktop {
+      background-color: #f2f2f2;
+    }
+  }
+  
+  /* Tablet styles */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .tablet {
+      background-color: #d9d9d9;
+    }
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 767px) {
+    .mobile {
+      background-color: #b5b5b5;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="mockup desktop">
+  <h1>Desktop Mockup</h1>
+</div>
+
+<div class="mockup tablet">
+  <h1>Tablet Mockup</h1>
+</div>
+
+<div class="mockup mobile">
+  <h1>Mobile Mockup</h1>
+</div>
+
+</body>
+</html>
