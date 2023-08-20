@@ -7,11 +7,16 @@ body {
 
 /** HEADER **/
 #header-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: auto;
   background-color: #f6b319;
-  border-radius: 0;
-  border: 0;
+  z-index: 1000;
+  width: 100%;
   display: flex;
-  align-items: center; /* Vertically center items */
+  align-items: center;
+  padding: 15px 30px; /* Add padding for spacing */
 }
 
 #logo-img  {
@@ -61,4 +66,8 @@ body {
 }
 .navbar-brand p span { /* Star-K */
   vertical-align: middle;
+}
+#collapsable-nav ul.navbar-nav {
+  margin-left: auto; /* Push links to the right */
+  padding-right: 15px; /* Add some right padding */
 }
