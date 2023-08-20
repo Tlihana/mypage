@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  color: #fff;
+  color: #181616;
   background-color: #61122f;
   font-family: 'Oxygen', sans-serif;
 }
@@ -11,15 +11,15 @@ body {
   top: 0;
   right: 0;
   left: auto;
-  background-color: #f6b319;
+  background-color: #b88613;
   z-index: 1000;
   width: 100%;
-  display: flex;
+  display: auto;
   align-items: center;
   padding: 15px 30px; /* Add padding for spacing */
 }
 
-#logo-img  {
+#logo-img {
   background: url('../images/restaurant-logo_large.png') no-repeat;
   width: 150px;
   height: 150px;
@@ -36,9 +36,9 @@ body {
     width: 0; /* Set width to 0 to prevent taking up space */
     margin: 0; /* Remove margin to prevent space */
   }
-  }
-/* Retain hover effect on medium and large screens */
+}
 
+/* Retain hover effect on medium and large screens */
 .navbar-brand {
   padding-top: 25px;
 }
@@ -53,17 +53,20 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
-  
 }
-.navbar-brand a, .navbar-brand a {
+
+.navbar-brand a,
+.navbar-brand a {
   text-decoration: none;
 }
+
 .navbar-brand p { /* Kosher cert */
   color: #000;
   text-transform: uppercase;
-  font-size: .7em;
+  font-size: 0.7em;
   margin-top: 15px;
 }
+
 .navbar-brand p span { /* Star-K */
   vertical-align: middle;
 }
