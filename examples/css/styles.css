@@ -1,22 +1,20 @@
 body {
   font-size: 16px;
-  color: #181616;
+  color: #070707;
   background-color: #61122f;
   font-family: 'Oxygen', sans-serif;
 }
 
 /** HEADER **/
 #header-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: auto;
-  background-color: #b88613;
-  z-index: 1000;
+  
+  background-color: #2cbd5c;
   width: 100%;
-  display: auto;
+  display: flex;
   align-items: center;
-  padding: 15px 30px; /* Add padding for spacing */
+  border-radius: 0%;
+  border: 0;
+  /* Add padding for spacing */
 }
 
 #logo-img {
@@ -24,26 +22,35 @@ body {
   width: 150px;
   height: 150px;
   margin: 10px 15px 10px 0;
-  transition: opacity 0.3s; /* Add a smooth transition for opacity */
-  opacity: 1; /* By default, set the logo to be visible */
+  transition: opacity 0.3s;
+  /* Add a smooth transition for opacity */
+  opacity: 1;
+  /* By default, set the logo to be visible */
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #logo-img {
-    opacity: 0; /* Hide the logo */
-    pointer-events: none; /* Disable pointer events to prevent hover */
-    opacity: 0; /* Hide the logo */
-    width: 0; /* Set width to 0 to prevent taking up space */
-    margin: 0; /* Remove margin to prevent space */
+    opacity: 0;
+    /* Hide the logo */
+    pointer-events: none;
+    /* Disable pointer events to prevent hover */
+    opacity: 0;
+    /* Hide the logo */
+    width: 0;
+    /* Set width to 0 to prevent taking up space */
+    margin: 0;
+    /* Remove margin to prevent space */
   }
 }
+
 
 /* Retain hover effect on medium and large screens */
 .navbar-brand {
   padding-top: 25px;
 }
 
-.navbar-brand h1 { /* Restaurant name */
+.navbar-brand h1 {
+  /* Restaurant name */
   font-family: 'Lora', serif;
   color: #557c3e;
   font-size: 1.5em;
@@ -53,20 +60,30 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
+  
 }
 
 .navbar-brand a,
-.navbar-brand a {
+.navbar-brand a:focus {
   text-decoration: none;
 }
 
-.navbar-brand p { /* Kosher cert */
-  color: #000;
-  text-transform: uppercase;
-  font-size: 0.7em;
+/* Add these styles to adjust the positioning of the Kosher Certified label */
+.kosher-certified {
+  text-align: justify;
   margin-top: 15px;
+ 
+  /* Adjust the margin as needed */
+
 }
 
-.navbar-brand p span { /* Star-K */
+.kosher-certified img {
+  margin: 0;
+  vertical-align: middle;
+  /* Center the image horizontally */
+}
+
+.kosher-certified span {
+  display: outside;
   vertical-align: middle;
 }
